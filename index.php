@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') exit(0);
 require_once __DIR__ . "/vendor/autoload.php";
 
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-$base = "/pampagoserver/";
+$base = "/pampagoAPI/";
 $route = str_replace($base, "", $uri);
 $route = trim($route, "/");
 

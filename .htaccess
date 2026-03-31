@@ -3,7 +3,7 @@ RewriteEngine On
 # permitir Authorization header (necesario para JWT)
 RewriteCond %{HTTP:Authorization} .
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-
+RewriteBase /pampagoAPI/
 # router
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
