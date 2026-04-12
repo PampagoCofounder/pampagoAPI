@@ -12,7 +12,7 @@ class Database {
     private $db = "c2761701_pampadb";
     private $user = "c2761701_pampadb";
     private $pass = "VE61foweba";
-    
+
     /*
     private $host = "localhost";
     private $db   = "pampagodb";
