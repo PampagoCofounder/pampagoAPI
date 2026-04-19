@@ -2,9 +2,10 @@
 // ------------------
 // CORS (React Vite)
 // ------------------
-//header("Access-Control-Allow-Origin: http://localhost:5173");
-header("Access-Control-Allow-Origin: https://pampago.site/");
+header("Access-Control-Allow-Origin: http://localhost:5173");
+//header("Access-Control-Allow-Origin: https://pampago.site/");
 header("Access-Control-Allow-Credentials: true");
+
 header("Content-Type: application/json");
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {

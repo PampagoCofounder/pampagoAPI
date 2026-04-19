@@ -54,6 +54,10 @@ switch ($route) {
         require_once __DIR__ . "/routes/subcategoria.php";
         break;
 
+    case "chatbot":
+        require_once __DIR__ . "/routes/chatbot.php";
+        break;
+
     default:
         http_response_code(404);
         echo json_encode(["error" => "Ruta no encontrada", "ruta" => $route]);
